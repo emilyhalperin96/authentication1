@@ -20,3 +20,4 @@ class User(db.Model, UserMixin):
 
     def check_password_hash(self, password):
         return check_password_hash(self.password_hash, password)
+
